@@ -13,9 +13,10 @@ import texttable as tt
 # create texttable object
 
 url = 'https://www.trendrr.net/23562/legendary-fashion-designers-world-best-famous-top-female/'
-# that the site I scraped data from
+# this is the site I scraped data from
 
 load_web_page = requests.get(url)
 data = BeautifulSoup(load_web_page.content, 'html.parser')
 #gave a tag to the web_page
+
 print(data.get_text())
